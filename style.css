@@ -5,10 +5,14 @@
 
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .cursor{
@@ -39,6 +43,44 @@ header{
     overflow: hidden;
     background-image: url("data:image/jpeg;base64,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");
     background-size: contain;
+}
+
+.white{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.343);
+    position: absolute;
+    z-index: 999;
+    backdrop-filter: blur(50px);
+    right: -460px;
+    
+}
+
+.white i{
+    position: absolute;
+    font-size: 40px;
+    top: 50px;
+    right: 40px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.white .matter{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #95C11E; */
+    top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 30px;
+    padding: 30px;
+}
+
+.white .matter a{
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
 }
 
 .nav img{
@@ -128,26 +170,31 @@ header .about {
     position: absolute;
     top: 10vh;
     height: 90vh;
-    /* background-color: red; */
-    /* border: 3px dotted antiquewhite; */
-    /* background-image: url("https://www.uio.no/dscience/english/images/dall%C2%B7e-2024-03-11-14.06.01---create-an-image-that-portrays-a-futuristic-society-where-green-and-digital-technologies-are-perfectly-integrated-into-urban-life-promoting-optimism-a.webp"); */
-    /* background-size: cover; */
+    
 }
 
-.about video{
+.about .cloud{
     position: absolute;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
+
+}
+
+.about .car{
+    position: absolute;
+    width: 200px;
+    /* background-color: red; */
+    height: 200px;
+    object-fit: cover;
+    /* mix-blend-mode: lighten; */
 
 }
 
 .about .heading{
-    /* background-color: red; */
     display: inline-block;
     overflow-y: hidden;
-    /* background-color: red; */
     width: 100%;
     height: 14vh;
     white-space: nowrap;
@@ -161,7 +208,7 @@ header .about {
         transform: translateX(50%) ;
     }
     to{
-        transform: translateX(-100%) ;
+        transform: translateX(-150%) ;
     }
     
 }
@@ -176,6 +223,7 @@ header .about {
     -webkit-text-stroke: 2px #95C11E;
     color: transparent;
     animation: scroller 15s linear infinite;
+    transition: all ease 1s;
 
 }
 
@@ -183,21 +231,77 @@ header .about {
     color: #95C11E;
 }
 
-.cards{
-    position: absolute;
-    width: 100%;
-    background-color: red;
-    height: 60%;
-    bottom: 10%;
+
+.up{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0 20px;
 
 }
 
-.card{
-    height: 90%;
-    width: 20%;
-    background-color: #95C11E;
+.up .card{
+    height: 250px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(30px);
+    position: relative;
     border-radius: 20px;
+    top: 15vh;
+    border: 3px solid black;
+    border-bottom: 8px solid black;
+}
+
+.down{
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    margin: 0 20px;
+
+}
+
+.down .card{
+    height: 250px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.342);
+    backdrop-filter: blur(30px);
+    position: relative;
+    border-radius: 20px;
+    top: 20vh;
+    border: 3px solid black;
+    border-bottom: 8px solid black;
+
+}
+
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.scroller{
+    width: 100%;
+    height: 20%;
+    background-color: yellow;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 32px;
+    font-weight: 100;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.scroll{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 30px;
+    margin: 0 20px;
+    transform: translateX(-1000px);
+}
+
+.scroller i{
+    font-size: 45px;
+    font-weight: 100;
 }
