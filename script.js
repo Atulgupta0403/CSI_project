@@ -111,10 +111,38 @@ window.addEventListener("wheel",(dets)=>{
             transform : "translateX(00%)",
             duration : 4,
             ease : "none"
-
         })
         gsap.to(".scroll i",{
             rotate : 0
         })
+    }
+})
+
+const text = document.querySelector(".page2 h1")
+let textcont = text.textContent;
+// console.log(textcont)
+
+let splittedText = textcont.split("")
+console.log(splittedText);
+
+let flag = ""
+
+splittedText.forEach((e)=>{
+    flag += `<span class="a">${e}</span>`
+})
+
+// console.log(flag)
+
+text.innerHTML = flag
+
+gsap.from(".page2 h1 span",{
+    y : 50,
+    duratin : 1,
+    stagger : 0.2,
+    scrollTrigger : {
+        trigger : ".page2 h1 span",
+        scroller : "body",
+        // markers : true,
+        start : "top 50%",      
     }
 })
